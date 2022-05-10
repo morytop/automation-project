@@ -1,0 +1,35 @@
+{
+  "name": "automation-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "env-cmd -f dev.env npx playwright test e2e/",
+    "tests:debug": "env-cmd -f dev.env npx playwright test e2e/ --debug --project=chromium",
+    "tests:ch": "env-cmd -f dev.env npx playwright test e2e/  --project=chromium",
+    "tests:ff": "env-cmd -f dev.env  npx playwright test tests/  --project=firefox",
+    "tests:wk": "env-cmd -f dev.env  npx playwright test tests/  --project=webkit"
+  },
+  "keywords": [
+    "playwright",
+    "js",
+    "api",
+    "tests",
+    "e2e"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morytop/automation-project.git"
+  },
+  "author": "Piotr Moryto",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "@playwright/test": "^1.21.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "env-cmd": "^10.1.0",
+    "yarn": "^1.22.18"
+  }
+}
