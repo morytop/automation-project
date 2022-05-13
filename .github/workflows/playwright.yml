@@ -15,12 +15,12 @@ jobs:
         node-version: '14.x'
     - uses: microsoft/playwright-github-action@v1
     - name: Install dependencies
-      run: npm ci
+      run: yarn install
     - name: Install Playwright
       run: npx playwright install --with-deps
     - name: Run Tests In Chrome
-      run: npm run test:headless:chrome   
+      run: yarn run tests:ch   
     - name: Run Tests In Firefox
-      run: npm run test:headless:firefox    
+      run: yarn run tests:ff    
     - name: Run Tests In Safari
-      run: npm run test:headless:safari
+      run: yarn run tests:wk
