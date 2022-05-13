@@ -7,8 +7,8 @@
     "tests": "env-cmd -f dev.env npx playwright test e2e/",
     "tests:debug": "env-cmd -f dev.env npx playwright test e2e/ --debug --project=chromium",
     "tests:ch": "env-cmd -f dev.env npx playwright test e2e/  --project=chromium",
-    "tests:ff": "env-cmd -f dev.env  npx playwright test tests/  --project=firefox",
-    "tests:wk": "env-cmd -f dev.env  npx playwright test tests/  --project=webkit"
+    "tests:ff": "env-cmd -f dev.env  npx playwright test e2e/  --project=firefox",
+    "tests:wk": "env-cmd -f dev.env  npx playwright test e2e/  --project=webkit"
   },
   "keywords": [
     "playwright",
