@@ -1,4 +1,5 @@
 const config = {
+  workers: 1,
   use: {
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',

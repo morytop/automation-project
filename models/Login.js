@@ -25,9 +25,9 @@ exports.LoginPage = class LoginPage extends BasePage {
         await this.click(this.loginBtn);
     }
 
-    async signup() {
-        await this.fill(this.signupName, faker.internet.userName());
-        await this.fill(this.signupEmail, faker.internet.email());
+    async signupUser(name = faker.internet.userName(), email = faker.internet.email()) {
+        await this.fill(this.signupName, name);
+        await this.fill(this.signupEmail, email);
         await this.click(this.signupBtn);
     }
 }    
