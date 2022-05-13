@@ -22,7 +22,7 @@ test.describe('Login user:', () => {
         expect(page.locator('a >> i[class="fa fa-user"]')).toBeVisible();
 
         await page.click('li >> a[href="/logout"]');
-        await expect(page).toHaveURL(/.+\/login$/);
+        await expect(page).toHaveURL('/login');
     })
 
     test('with incorrect credentials', async ({ page }) => {

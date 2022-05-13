@@ -10,7 +10,7 @@ test.describe('Register user:', () => {
         await expect(page.locator('#slider-carousel')).toBeVisible();
     })
 
-    test.skip('valid registration', async ({ page }) => {
+    test('with valid data', async ({ page }) => {
         await page.click('i[class="fa fa-lock"]');
         await expect(page.locator('.signup-form')).toBeVisible();
 		await expect(page.locator('//*[contains(text(),"New User Signup!")]')).toBeVisible();
@@ -18,13 +18,13 @@ test.describe('Register user:', () => {
         const loginPage = new LoginPage(page);
         await loginPage.signupUser();
 
-        await expect(page).toHaveURL(/.+\/signup$/);
+        await expect(page).toHaveURL('/signup');
         await expect(page.locator('.login-form')).toBeVisible();
 
         const signupPage = new SignupPage(page)
         await signupPage.signupForm();
 
-        await page.waitForURL(/.+\/account_created$/);
+        await page.waitForURL('/account_created');
         await expect(page.locator('[data-qa="account-created"]')).toBeVisible();
         await page.click('[data-qa="continue-button"]')
         await page.waitForResponse(response => response.status() === 200);
