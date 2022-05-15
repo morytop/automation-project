@@ -2,17 +2,23 @@ const { test, expect } = require('@playwright/test');
 const { ProductsPage } = require('../models/Products');
 
 test.describe('Products:', () => {
-    test('search jeans', async ({ page }) => {
+    test.beforeEach(async ({ page }) => {
         const productsPage = new ProductsPage(page);
         productsPage.goToProducts();
         await page.waitForURL('/products');
-
+    })
+    
+    test('verify all products and detail page', async ({ page }) => {
+        const productsPage = new ProductsPage(page);
+        await page.locator('i[class="fa fa-plus-square"]').first().click();
+        
         const elements = [
-            '#sale_image',
-            '#search_product',
-            '#submit_search',
-            '.left-sidebar',
-            '.features_items'
+            '.product-information',
+            '//*[contains(text(),"Category:")]',
+            'div[class="product-information"] span span',
+            '//*[contains(text(),"Availability:")]',
+            '//*[contains(text(),"Condition:")]',
+            '//*[contains(text(),"Brand:")]'
         ];
         for (const element of elements) {
             await test.step(`Visibility of: ${element}`, async () => {
@@ -20,7 +26,10 @@ test.describe('Products:', () => {
                 await expect(el).toBeVisible();
             })
         }
-        
+    })
+
+    test('search jeans', async ({ page }) => {
+        const productsPage = new ProductsPage(page);
         productsPage.search();
         await page.waitForSelector('h2[class="title text-center"]');
 
