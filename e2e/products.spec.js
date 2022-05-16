@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { ProductsPage } = require('../models/Products');
+const { DetailPage } = require('../models/Detail');
 
 test.describe('Products:', () => {
     test.beforeEach(async ({ page }) => {
@@ -42,10 +43,10 @@ test.describe('Products:', () => {
     })
 
     test('add review on product', async ({ page }) => {
-        const productsPage = new ProductsPage(page);
+        const detailPage = new DetailPage(page);
         await page.waitForSelector('.features_items');
         await page.locator('.fa.fa-plus-square').first().click();
-        await productsPage.addReview();
+        await detailPage.addReview();
 
         await expect(page.locator('//*[contains(text(),"Thank you for your review.")]')).toBeVisible();
     })
