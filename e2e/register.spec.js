@@ -1,12 +1,12 @@
 const { test, expect } = require('@playwright/test');
-const { BasePage } = require('../models/Base');
+const { HomePage } = require('../models/Homepage');
 const { LoginPage } = require('../models/Login');
 const { SignupPage } = require('../models/Signup');
 
 test.describe('Register user:', () => {
     test.beforeEach(async ({ page }) => {
-        const basePage = new BasePage(page);
-        await basePage.visitHomePage();
+        const homePage = new HomePage(page);
+        await homePage.visit();
         await expect(page.locator('#slider-carousel')).toBeVisible();
     })
 
