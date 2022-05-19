@@ -5,7 +5,6 @@ exports.CartPage = class CartPage extends BasePage {
     constructor(page) {
         super(page);
 
-        this.cart = '.fa.fa-shopping-cart';
         this.removeBtn = '.cart_quantity_delete';
         this.checkoutBtn = 'btn.btn-default.check_out';
         this.subscribeInput = '#susbscribe_email';
@@ -13,7 +12,7 @@ exports.CartPage = class CartPage extends BasePage {
     }
 
     async open() {
-        await this.click(this.cart);
+        await this.page.click('.fa.fa-shopping-cart >> nth=0');
     }
 
     async remove() {

@@ -12,7 +12,7 @@ exports.ProductsPage = class ProductsPage extends BasePage {
     }
 
     async goToProducts() {
-        await this.visitHomePage();
+        await this.page.goto('/');
         await this.click(this.productBtn);
     }
     
@@ -20,4 +20,13 @@ exports.ProductsPage = class ProductsPage extends BasePage {
         await this.fill(this.searchInput, 'jeans');
         await this.click(this.searchBtn);
     }
+
+    async addToCart() {
+        const randomProductIndex = Math.floor(Math.random() * 8) + 1
+
+        await this.page.locator(`a[data-product-id="${randomProductIndex}"] >> nth=0`).click();
+        await this.click('//*[contains(text(),"Continue Shopping")]');
+    }
+       
+
 }
