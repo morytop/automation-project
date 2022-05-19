@@ -15,6 +15,12 @@ exports.CartPage = class CartPage extends BasePage {
         await this.page.click('.fa.fa-shopping-cart >> nth=0');
     }
 
+    async addRandomItem() {
+        const randomProductIndex = Math.floor(Math.random() * 8) + 1
+        await this.page.locator(`a[data-product-id="${randomProductIndex}"] >> nth=0`).click();
+        await this.click('//*[contains(text(),"Continue Shopping")]');
+    }
+
     async remove() {
         await this.click(this.removeBtn);
     }

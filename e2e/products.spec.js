@@ -51,14 +51,4 @@ test.describe('Products:', () => {
 
         await expect(page.locator('//*[contains(text(),"Thank you for your review.")]')).toBeVisible();
     })
-
-    test('add random item to cart and verify if is not empty', async ({page}) => {
-        const productsPage = new ProductsPage(page);
-        await productsPage.addToCart();
-
-        const cartPage = new CartPage(page);
-        await cartPage.open();
-
-        await expect(page.locator('#empty_cart')).not.toBeVisible();
-    })
 })
