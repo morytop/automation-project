@@ -12,13 +12,18 @@ exports.CartPage = class CartPage extends BasePage {
     }
 
     async open() {
-        await this.page.click('.fa.fa-shopping-cart >> nth=0');
+        await this.click('.fa.fa-shopping-cart >> nth=0');
     }
 
     async addRandomItem() {
         const randomProductIndex = Math.floor(Math.random() * 8) + 1
-        await this.page.locator(`a[data-product-id="${randomProductIndex}"] >> nth=0`).click();
+        await this.click(`a[data-product-id="${randomProductIndex}"] >> nth=0`);
         await this.click('//*[contains(text(),"Continue Shopping")]');
+    }
+
+    async addRecommendedItem() {
+        await this.click('.recommended_items a[class="btn btn-default add-to-cart"] >> nth=0');
+        await this.click('p >> a[href="/view_cart"]');
     }
 
     async remove() {
