@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tests": "env-cmd -f dev.env npx playwright test e2e/",
+    "tests:allure": "env-cmd -f dev.env npx playwright test e2e/ --project=chromium --reporter=line,allure-playwright",
     "tests:debug": "env-cmd -f dev.env npx playwright test e2e/ --debug --project=chromium",
     "tests:ch": "env-cmd -f dev.env npx playwright test e2e/  --project=chromium",
     "tests:ff": "env-cmd -f dev.env  npx playwright test e2e/  --project=firefox",
