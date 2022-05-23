@@ -18,8 +18,8 @@ jobs:
       run: yarn install
     - name: Install Playwright
       run: npx playwright install --with-deps
-    - name: Run Tests In Chrome with Allure report
-      run: yarn run tests:allure    
+    - name: Run Tests In Chrome
+      run: yarn run tests:ch   
     - name: Deploy report page
       uses: peaceiris/actions-gh-pages@v3
       with:
