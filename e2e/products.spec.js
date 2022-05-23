@@ -51,4 +51,12 @@ test.describe('Products:', () => {
 
         await expect(page.locator('//*[contains(text(),"Thank you for your review.")]')).toBeVisible();
     })
+
+    test('view & cart brand products', async ({page}) => {
+        await expect(page.locator('.brands_products')).toBeVisible();
+        await page.click('a[href="/brand_products/Polo"]');
+        await page.waitForURL('brand_products/Polo');
+        await expect(page.locator('h2[class="title text-center"]')).toContainText('Brand - Polo Products');
+        await expect(page.locator('.features_items')).toBeVisible();
+    })
 })

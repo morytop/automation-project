@@ -33,9 +33,4 @@ exports.CartPage = class CartPage extends BasePage {
     async proceedToCheckout() {
         await this.click(this.checkoutBtn);
     }
-
-    async subscribe() {
-        await this.fill(this.subscribeInput, faker.internet.email());
-        await this.click(this.subscribeBtn);
-    }
 }
