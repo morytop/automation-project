@@ -6,7 +6,10 @@ const config = {
     trace: 'retain-on-failure',
     retries: 2,
     timeout: 60000,
-    reporter: 'allure-playwright',
+    reporter: [
+      ['line'],
+      ['allure-playwright']
+    ],
     ignoreHTTPSErrors: true,
     baseURL: "https://www.automationexercise.com/"
   },
