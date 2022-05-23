@@ -20,7 +20,7 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Tests In Chrome with Allure report
       run: yarn run tests:allure    
-     - name: Deploy report page
+    - name: Deploy report page
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
