@@ -20,6 +20,11 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.35.tgz"
   "version" "17.0.35"
 
+"allure-commandline@^2.17.2":
+  "integrity" "sha512-2a0M0nX1KtVrg4y0rWEFn/OQkv7AaQSMBOEtlKfQl3heZoTEo0IdB08Uk5vU390+qPsEv3EO5igjyCrS0gX+FQ=="
+  "resolved" "https://registry.npmjs.org/allure-commandline/-/allure-commandline-2.17.2.tgz"
+  "version" "2.17.2"
+
 "allure-js-commons@2.0.0-beta.16":
   "integrity" "sha512-biAFm8FugPMA0THZpsWLdi+F8n1BeUTYkkpmQ4ZqUAKeg2xcw5arM0Qa4rq6Qs0HPLbdVS9Jj8fb7e/ahCr/Ig=="
   "resolved" "https://registry.npmjs.org/allure-js-commons/-/allure-js-commons-2.0.0-beta.16.tgz"

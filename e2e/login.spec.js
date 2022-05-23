@@ -33,6 +33,6 @@ test.describe('Login user:', () => {
         const loginPage = new LoginPage(page);
         await loginPage.invalidLogin();
 
-        //await expect(page.locator('//*[contains(text(),"Your email or password is incorrect!")]'),).toBeVisible();
+        await expect(page.locator('//*[contains(text(),"Your email or password is incorrect!")]'),).toBeVisible();
     })
 })

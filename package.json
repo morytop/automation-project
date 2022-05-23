@@ -9,7 +9,8 @@
     "tests:debug": "env-cmd -f dev.env npx playwright test e2e/ --debug --project=chromium",
     "tests:ch": "env-cmd -f dev.env npx playwright test e2e/  --project=chromium",
     "tests:ff": "env-cmd -f dev.env  npx playwright test e2e/  --project=firefox",
-    "tests:wk": "env-cmd -f dev.env  npx playwright test e2e/  --project=webkit"
+    "tests:wk": "env-cmd -f dev.env  npx playwright test e2e/  --project=webkit",
+    "generate:report": "npx allure generate ./allure-results --clean"
   },
   "keywords": [
     "playwright",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@faker-js/faker": "^6.3.1",
     "@playwright/test": "^1.22.2",
+    "allure-commandline": "^2.17.2",
     "allure-playwright": "^2.0.0-beta.16"
   },
   "dependencies": {

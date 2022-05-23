@@ -1,0 +1,252 @@
+{
+  "uid" : "a80d36ebb0bbdbc3",
+  "name" : "with correct credentials and logout",
+  "fullName" : "with correct credentials and logout",
+  "historyId" : "Chromium e2e\\login.spec.js Login user: with correct credentials and logout",
+  "time" : {
+    "start" : 1653309354245,
+    "stop" : 1653309361870,
+    "duration" : 7625
+  },
+  "status" : "failed",
+  "statusMessage" : "locator.fill: value: expected string, got undefined",
+  "statusTrace" : "locator.fill: value: expected string, got undefined\n    at LoginPage.fill (C:\\Projekty\\automation-project\\models\\Base.js:11:37)\n    at LoginPage.validLogin (C:\\Projekty\\automation-project\\models\\Login.js:17:20)\n    at C:\\Projekty\\automation-project\\e2e\\login.spec.js:19:25",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "locator.fill: value: expected string, got undefined",
+    "statusTrace" : "locator.fill: value: expected string, got undefined\n    at LoginPage.fill (C:\\Projekty\\automation-project\\models\\Base.js:11:37)\n    at LoginPage.validLogin (C:\\Projekty\\automation-project\\models\\Login.js:17:20)\n    at C:\\Projekty\\automation-project\\e2e\\login.spec.js:19:25",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1653309354246,
+        "stop" : 1653309360042,
+        "duration" : 5796
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "beforeEach hook",
+        "time" : {
+          "start" : 1653309354246,
+          "stop" : 1653309360042,
+          "duration" : 5796
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browserContext.newPage",
+          "time" : {
+            "start" : 1653309354254,
+            "stop" : 1653309354361,
+            "duration" : 107
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "page.goto(/)",
+          "time" : {
+            "start" : 1653309354362,
+            "stop" : 1653309359980,
+            "duration" : 5618
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "expect.toBeVisible",
+          "time" : {
+            "start" : 1653309359982,
+            "stop" : 1653309360042,
+            "duration" : 60
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "page.click(i[class=\"fa fa-lock\"])",
+      "time" : {
+        "start" : 1653309360043,
+        "stop" : 1653309360449,
+        "duration" : 406
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1653309360450,
+        "stop" : 1653309360552,
+        "duration" : 102
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1653309360552,
+        "stop" : 1653309360563,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "locator.fill([data-qa=\"login-email\"])",
+      "time" : {
+        "start" : 1653309360564,
+        "stop" : 1653309360565,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1653309360565,
+        "stop" : 1653309361823,
+        "duration" : 1258
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1653309361607,
+          "stop" : 1653309361670,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "aecc6b8f7e089a57",
+      "name" : "video",
+      "source" : "aecc6b8f7e089a57.webm",
+      "type" : "video/webm",
+      "size" : 323206
+    }, {
+      "uid" : "2b3c9f2acf6f2377",
+      "name" : "trace",
+      "source" : "2b3c9f2acf6f2377.ZIP",
+      "type" : "application/zip",
+      "size" : 5715880
+    }, {
+      "uid" : "b1e8d4c4a209a37",
+      "name" : "screenshot",
+      "source" : "b1e8d4c4a209a37.png",
+      "type" : "image/png",
+      "size" : 227033
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 11,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Chromium"
+  }, {
+    "name" : "suite",
+    "value" : "e2e\\login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Login user:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a80d36ebb0bbdbc3.json",
+  "parameterValues" : [ ]
+}

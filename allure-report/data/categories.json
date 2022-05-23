@@ -1,0 +1,165 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expect(received).toBeVisible()\nCall log:\n  - expect.toBeVisible with timeout 5000ms\n  - waiting for selector \"//*[contains(text(),\"You have been successfully subscribed!\")]\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n",
+      "children" : [ {
+        "name" : "verify subscription",
+        "uid" : "1f7523c614b5fc0",
+        "parentUid" : "76176b77c730fbdeb9afd91172617fa1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653309334439,
+          "stop" : 1653309344358,
+          "duration" : 9919
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "76176b77c730fbdeb9afd91172617fa1"
+    }, {
+      "name" : "locator.fill: value: expected string, got undefined",
+      "children" : [ {
+        "name" : "with correct credentials and logout",
+        "uid" : "a80d36ebb0bbdbc3",
+        "parentUid" : "cd92cbd4f00c2814ae7e383a4720f872",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653309354245,
+          "stop" : 1653309361870,
+          "duration" : 7625
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "with correct credentials and logout",
+        "uid" : "81b59a230bf65a50",
+        "parentUid" : "cd92cbd4f00c2814ae7e383a4720f872",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653309538201,
+          "stop" : 1653309548572,
+          "duration" : 10371
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "with correct credentials and logout",
+        "uid" : "591928117febb3a8",
+        "parentUid" : "cd92cbd4f00c2814ae7e383a4720f872",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653309724825,
+          "stop" : 1653309733390,
+          "duration" : 8565
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd92cbd4f00c2814ae7e383a4720f872"
+    }, {
+      "name" : "expect(received).toBeVisible()\nCall log:\n  - expect.toBeVisible with timeout 5000ms\n  - waiting for selector \"//p[contains(text(),\"Email Address already exist!\")]\"\n",
+      "children" : [ {
+        "name" : "with existing email",
+        "uid" : "62e7f23ee3eabeb2",
+        "parentUid" : "bea1a9839d02900c31a832c3111cfd95",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653309445394,
+          "stop" : 1653309457196,
+          "duration" : 11802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "with existing email",
+        "uid" : "4f821d421001b727",
+        "parentUid" : "bea1a9839d02900c31a832c3111cfd95",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653309629176,
+          "stop" : 1653309644120,
+          "duration" : 14944
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "with existing email",
+        "uid" : "9e6ea3daab6853b3",
+        "parentUid" : "bea1a9839d02900c31a832c3111cfd95",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653309801036,
+          "stop" : 1653309813296,
+          "duration" : 12260
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bea1a9839d02900c31a832c3111cfd95"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Timeout of 30000ms exceeded in beforeEach hook.",
+      "children" : [ {
+        "name" : "search jeans",
+        "uid" : "d20535f682770018",
+        "parentUid" : "af8fabd4853dbb4e98807fea9dd98b71",
+        "status" : "broken",
+        "time" : {
+          "start" : 1653309382167,
+          "stop" : 1653309413796,
+          "duration" : 31629
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af8fabd4853dbb4e98807fea9dd98b71"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
