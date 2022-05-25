@@ -24,7 +24,7 @@ jobs:
       run: yarn run tests:allure  
       continue-on-error: true 
         
-     - uses: actions/upload-artifact@master
+    - uses: actions/upload-artifact@master
       with:
         name: allure-results
         path: allure-results
