@@ -23,10 +23,10 @@ jobs:
     - name: Run Tests In Chrome
       run: yarn run tests:allure  
       continue-on-error: true 
-          
+
     - name: Generate Allure report
-        if: always()
-        uses: afiore/action-allure-report@v0.1.0
+      if: always()
+      uses: afiore/action-allure-report@v0.1.0
 
     - name: Commit report results
       if: always()
