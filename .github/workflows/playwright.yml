@@ -4,6 +4,8 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+permissions:
+  contents: write
 jobs:
   test:
     timeout-minutes: 60
@@ -22,7 +24,7 @@ jobs:
       run: yarn run tests:allure  
       continue-on-error: true 
         
-    - name: Get Allure history
+    - name: Generate Allure report
       run: yarn run generate:report
       continue-on-error: true
 
