@@ -13,6 +13,11 @@ exports.LoginPage = class LoginPage extends BasePage {
         this.signupBtn = '[data-qa="signup-button"]';    
     }
 
+    async goTo() {
+        await this.page.goto('/');
+        await this.page.click('i[class="fa fa-lock"]');
+    }
+
     async validLogin() {
         await this.fill(this.loginEmail, process.env.USER_EMAIL);
         await this.fill(this.loginPassword, process.env.USER_PASSWORD);

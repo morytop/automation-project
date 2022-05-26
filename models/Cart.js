@@ -6,7 +6,7 @@ exports.CartPage = class CartPage extends BasePage {
         super(page);
 
         this.removeBtn = '.cart_quantity_delete';
-        this.checkoutBtn = 'btn.btn-default.check_out';
+        this.checkoutBtn = 'a[class="btn btn-default check_out"]';
         this.subscribeInput = '#susbscribe_email';
         this.subscribeBtn = '#subscribe';
     }
