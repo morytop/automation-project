@@ -41,7 +41,7 @@ test.describe('Cart:', () => {
     test('add to cart from recommended items', async ({page}) => {
         await expect(page.locator('.recommended_items >> .title.text-center')).toBeVisible();
         const cartPage = new CartPage(page);
-        await cartPage.addRecommendedItem();
+        await cartPage.addItem();
         await expect(page.locator('tr[id*=product]')).toBeVisible();
     })
 })

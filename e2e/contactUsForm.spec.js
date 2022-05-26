@@ -17,7 +17,7 @@ test.describe('Contact us:', () => {
 
         page.on('dialog', (dialog) => dialog.accept());
         await page.click('[data-qa="submit-button"]');
-        await expect(page.locator('.status.alert.alert-success')).toBeVisible();
+        await expect(page.locator('div[class="status alert alert-success"]')).toBeVisible();
         await page.click('.btn.btn-success');
         await expect(page).toHaveURL('/');
     })

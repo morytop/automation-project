@@ -21,8 +21,9 @@ exports.CartPage = class CartPage extends BasePage {
         await this.click('//*[contains(text(),"Continue Shopping")]');
     }
 
-    async addRecommendedItem() {
-        await this.click('.recommended_items a[class="btn btn-default add-to-cart"] >> nth=0');
+    async addItem() {
+        await this.click('.add-to-cart >> nth=0');
+        await this.page.waitForSelector('p >> a[href="/view_cart"]');
         await this.click('p >> a[href="/view_cart"]');
     }
 

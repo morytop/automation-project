@@ -6,8 +6,8 @@ exports.ProductsPage = class ProductsPage extends BasePage {
         super(page);
 
         this.productBtn = 'li >> a[href="/products"]'
-        this.searchInput = '#search_product';
-        this.searchBtn = '#submit_search';
+        this.searchInput = 'input[name="search"]';
+        this.searchBtn = 'button[class="btn btn-default btn-lg"]';
         this.viewBtn = 'i[class="fa fa-plus-square"]';   
     }
 

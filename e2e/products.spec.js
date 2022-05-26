@@ -2,12 +2,13 @@ const { test, expect } = require('@playwright/test');
 const { ProductsPage } = require('../models/Products');
 const { DetailPage } = require('../models/Detail');
 const { CartPage } = require('../models/Cart');
+const { LoginPage } = require('../models/Login');
 
 test.describe('Products:', () => {
     test.beforeEach(async ({ page }) => {
         const productsPage = new ProductsPage(page);
         productsPage.goToProducts();
-        await page.waitForURL('/products');
+        await page.waitForNavigation('/products');
     })
     
     test('verify all products and detail page', async ({ page }) => {
@@ -31,7 +32,7 @@ test.describe('Products:', () => {
         }
     })
 
-    test('search jeans', async ({ page }) => {
+    test('search product', async ({ page }) => {
         const productsPage = new ProductsPage(page);
         productsPage.search();
         await page.waitForSelector('h2[class="title text-center"]');
