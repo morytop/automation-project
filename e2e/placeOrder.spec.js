@@ -48,7 +48,7 @@ test.describe('Checkout & Payment:', () => {
         await expect(page.locator('[data-qa="order-placed"]')).toBeVisible()
     })
 
-    test('place order: login before checkout', async ({page}) => {
+    test('place order: login before checkout and download invoice', async ({page}) => {
         await page.click('i[class="fa fa-lock"]');
         const loginPage = new LoginPage(page);
         await loginPage.validLogin();
@@ -74,5 +74,12 @@ test.describe('Checkout & Payment:', () => {
         await payment.pay();
         await page.waitForURL('/payment_done/**');
         await expect(page.locator('[data-qa="order-placed"]')).toBeVisible()
+
+        const [ download ] = await Promise.all([
+            page.waitForEvent('download'),
+            page.locator('a.check_out').click(),
+        ]);
+        const path = await download.path();
+        console.log(path);
     })
 })
