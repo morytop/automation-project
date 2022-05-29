@@ -7,29 +7,13 @@ const { CheckoutPage } = require('../models/Checkout');
 const { PaymentPage } = require('../models/Payment');
 
 test.describe('Checkout & Payment:', () => {
-    test('verify address details in checkout page', async ({page}) => {
-        const loginPage = new LoginPage(page);
-        await loginPage.goTo();
-        await loginPage.validLogin();
-        const cartPage = new CartPage(page);
-        await cartPage.addRandomItem();
-        await cartPage.open();
-        await expect(page).toHaveURL('/view_cart');
-        await cartPage.proceedToCheckout();
-        await expect(page).toHaveURL('/checkout');
-        
-        const deliveryAdress = page.locator('#address_delivery');
-        const billingAdress = page.locator('#address_invoice');
-        await expect(deliveryAdress).toBeVisible();
-        await expect(billingAdress).toBeVisible();
-        await expect(page.locator('li[class="address_firstname address_lastname"] >> nth=0')).toHaveText('Mr. tester ipsum');
+    test.beforeEach(async ({page}) => {
+        const homepage = new HomePage(page);
+        await homepage.visit();
+        await expect(page.locator('#slider-carousel')).toBeVisible();       
     })
 
     test('place order: register while checkout', async ({page}) => {
-        const homePage = new HomePage(page);
-        await homePage.visit();
-        await expect(page.locator('#slider-carousel')).toBeVisible();
-
         const cartPage = new CartPage(page);
         await cartPage.addRandomItem();
         await cartPage.open();
@@ -65,10 +49,6 @@ test.describe('Checkout & Payment:', () => {
     })
 
     test('place order: login before checkout', async ({page}) => {
-        const homePage = new HomePage(page);
-        await homePage.visit();
-        await expect(page.locator('#slider-carousel')).toBeVisible();
-
         await page.click('i[class="fa fa-lock"]');
         const loginPage = new LoginPage(page);
         await loginPage.validLogin();
