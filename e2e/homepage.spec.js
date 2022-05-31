@@ -25,4 +25,11 @@ test.describe('Homepage:', () => {
         await homepage.viewMenCategory();
         await expect(page.locator('h2[class="title text-center"]')).toContainText('Men - Tshirts Products');
     })
+
+    test('verify scroll up using arrow', async ({page}) => {
+        await expect(page.locator('.single-widget >> h2')).toHaveText('Subscription');
+        const unvisibleButton = await page.$('#scrollUp'); 
+        unvisibleButton.evaluate((node) => {node.click()})
+        await expect(page.locator('img[alt="Website for automation practice"]')).toBeVisible();
+    })
 })
