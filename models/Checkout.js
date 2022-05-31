@@ -1,19 +1,17 @@
-const { BasePage } = require('../models/Base');
 const { faker } = require('@faker-js/faker');
 
-exports.CheckoutPage = class CheckoutPage extends BasePage {
+exports.CheckoutPage = class CheckoutPage {
     constructor(page) {
-        super(page)
-
-        this.form = 'textarea[class="form-control"]';
-        this.orderBtn = 'a[class="btn btn-default check_out"]';
+        this.page = page;
+        this.form = page.locator('textarea[class="form-control"]');
+        this.orderBtn = page.locator('a[class="btn btn-default check_out"]');
     }
 
     async addComment() {
-        this.fill(this.form, faker.lorem.paragraph());
+        await this.form.fill(faker.lorem.paragraph());
     }
 
     async placeOrder() {
-        this.click(this.orderBtn);
+        await this.orderBtn.click();
     }
 }
