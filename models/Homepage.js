@@ -1,16 +1,14 @@
-const { BasePage } = require('../models/Base');
 const { faker } = require('@faker-js/faker');
 
-exports.HomePage = class HomePage extends BasePage {
+exports.HomePage = class HomePage {
     constructor(page) {
-        super(page);
-
-        this.subscribeInput = '#susbscribe_email';
-        this.subscribeBtn = '#subscribe';
-        this.womenCategory = 'a[href="#Women"]';
-        this.dressSubcategory = 'a[href="/category_products/1"]';
-        this.menCategory = 'a[href="#Men"]';
-        this.tshirtsSubcategory = 'a[href="/category_products/3"]'
+        this.page = page;
+        this.subscribeInput = page.locator('#susbscribe_email');
+        this.subscribeBtn = page.locator('#subscribe');
+        this.womenCategory = page.locator('a[href="#Women"]');
+        this.dressSubcategory = page.locator('a[href="/category_products/1"]');
+        this.menCategory = page.locator('a[href="#Men"]');
+        this.tshirtsSubcategory = page.locator('a[href="/category_products/3"]');
     }
 
     async visit() {
@@ -18,17 +16,17 @@ exports.HomePage = class HomePage extends BasePage {
     }
 
     async subscribe() {
-        await this.fill(this.subscribeInput, faker.internet.email());
-        await this.click(this.subscribeBtn);
+        await this.subscribeInput.fill(faker.internet.email());
+        await this.subscribeBtn.click();
     }
 
     async viewWomenCategory() {
-        await this.click(this.womenCategory);
-        await this.click(this.dressSubcategory);
+        await this.womenCategory.click();
+        await this.dressSubcategory.click();
     }
 
     async viewMenCategory() {
-        await this.click(this.menCategory);
-        await this.click(this.tshirtsSubcategory);
+        await this.menCategory.click();
+        await this.tshirtsSubcategory.click();
     }
 }

@@ -1,50 +1,48 @@
-const { BasePage } = require('../models/Base');
 const { faker } = require('@faker-js/faker');
 
-exports.SignupPage = class SignupPage extends BasePage {
+exports.SignupPage = class SignupPage {
     constructor(page) {
-        super(page);
-
-        this.radioBtn = '#id_gender1';
-        this.name = '[data-qa="name"]';
-        this.email = '[data-qa="email"]';
-        this.password = '[data-qa="password"]';
-        this.selectDay ='[data-qa="days"]';
-        this.selectMonth = '[data-qa="months"]';
-        this.selectYear = '[data-qa="years"]';
-        this.checkboxNewsletter = '#newsletter';
-        this.checkboxOffers = '#optin';
-        this.firstName = '[data-qa="first_name"]';
-        this.lastName = '[data-qa="last_name"]';
-        this.company = '[data-qa="company"]';
-        this.address = '[data-qa="address"]';
-        this.address2 = '[data-qa="address2"]';
-        this.country = '[data-qa="country"]';
-        this.state = '[data-qa="state"]';
-        this.city = '[data-qa="city"]';
-        this.zipcode = '[data-qa="zipcode"]';
-        this.mobileNumber = '[data-qa="mobile_number"]';
-        this.createBtn = '[data-qa="create-account"]';
+        this.page = page;
+        this.radioBtn = page.locator('#id_gender1');
+        this.name = page.locator('[data-qa="name"]');
+        this.email = page.locator('[data-qa="email"]');
+        this.password = page.locator('[data-qa="password"]');
+        this.selectDay = page.locator('[data-qa="days"]');
+        this.selectMonth = page.locator('[data-qa="months"]');
+        this.selectYear = page.locator('[data-qa="years"]');
+        this.checkboxNewsletter = page.locator('#newsletter');
+        this.checkboxOffers = page.locator('#optin');
+        this.firstName = page.locator('[data-qa="first_name"]');
+        this.lastName = page.locator('[data-qa="last_name"]');
+        this.company = page.locator('[data-qa="company"]');
+        this.address = page.locator('[data-qa="address"]');
+        this.address2 = page.locator('[data-qa="address2"]');
+        this.country = page.locator('[data-qa="country"]');
+        this.state = page.locator('[data-qa="state"]');
+        this.city = page.locator('[data-qa="city"]');
+        this.zipcode = page.locator('[data-qa="zipcode"]');
+        this.mobileNumber = page.locator('[data-qa="mobile_number"]');
+        this.createBtn = page.locator('[data-qa="create-account"]');
     }
 
     async signupForm() {
-        await this.click(this.radioBtn);
-        await this.fill(this.password, faker.internet.password());
-        await this.select(this.selectDay, '2');
-        await this.select(this.selectMonth, '4');
-        await this.select(this.selectYear, '1990');
-        await this.click(this.checkboxNewsletter);
-        await this.click(this.checkboxOffers);
-        await this.fill(this.firstName, faker.name.firstName());
-        await this.fill(this.lastName, faker.name.lastName());
-        await this.fill(this.company, faker.company.companyName());
-        await this.fill(this.address, faker.address.streetAddress());
-        await this.fill(this.address2, faker.address.streetName());
-        await this.select(this.country, 'United States');
-        await this.fill(this.state, faker.address.state());
-        await this.fill(this.city, faker.address.city());
-        await this.fill(this.zipcode, faker.address.zipCode());
-        await this.fill(this.mobileNumber, faker.phone.phoneNumber());
-        await this.click(this.createBtn);
+        await this.radioBtn.click();
+        await this.password.fill(faker.internet.password());
+        await this.selectDay.selectOption('2');
+        await this.selectMonth.selectOption('4');
+        await this.selectYear.selectOption('1990');
+        await this.checkboxNewsletter.click();
+        await this.checkboxOffers.click();
+        await this.firstName.fill(faker.name.firstName());
+        await this.lastName.fill(faker.name.lastName());
+        await this.company.fill(faker.company.companyName());
+        await this.address.fill(faker.address.streetAddress());
+        await this.address2.fill(faker.address.streetName());
+        await this.country.selectOption('United States');
+        await this.state.fill(faker.address.state());
+        await this.city.fill(faker.address.city());
+        await this.zipcode.fill(faker.address.zipCode());
+        await this.mobileNumber.fill(faker.phone.phoneNumber());
+        await this.createBtn.click();
     }
 }

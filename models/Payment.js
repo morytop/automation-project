@@ -1,24 +1,22 @@
-const { BasePage } = require('../models/Base');
 const { faker } = require('@faker-js/faker');
 
-exports.PaymentPage = class PaymentPage extends BasePage {
+exports.PaymentPage = class PaymentPage {
     constructor(page) {
-        super(page);
-
-        this.cardName = '[data-qa="name-on-card"]';
-        this.cardNumber = '[data-qa="card-number"]';
-        this.cvc = '[data-qa="cvc"]';
-        this.expiryMonth = '[data-qa="expiry-month"]';
-        this.expiryYear = '[data-qa="expiry-year"]';
-        this.payBtn = '[data-qa="pay-button"]';
+        this.page = page;
+        this.cardName = page.locator('[data-qa="name-on-card"]');
+        this.cardNumber = page.locator('[data-qa="card-number"]');
+        this.cvc = page.locator('[data-qa="cvc"]');
+        this.expiryMonth = page.locator('[data-qa="expiry-month"]');
+        this.expiryYear = page.locator('[data-qa="expiry-year"]');
+        this.payBtn = page.locator('[data-qa="pay-button"]');
     }
 
     async pay() {
-        await this.fill(this.cardName, faker.finance.creditCardIssuer());
-        await this.fill(this.cardNumber, faker.finance.creditCardNumber());
-        await this.fill(this.cvc, faker.finance.creditCardCVV());
-        await this.fill(this.expiryMonth, '01');
-        await this.fill(this.expiryYear, '2030');
-        await this.click(this.payBtn);
+        await this.cardName.fill(faker.finance.creditCardIssuer());
+        await this.cardNumber.fill(faker.finance.creditCardNumber());
+        await this.cvc.fill(faker.finance.creditCardCVV());
+        await this.expiryMonth.fill('01');
+        await this.expiryYear.fill('2030');
+        await this.payBtn.click();
     }
 }

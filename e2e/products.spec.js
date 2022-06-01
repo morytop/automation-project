@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { chromium } = require('@playwright/test');
 const { ProductsPage } = require('../models/Products');
 const { DetailPage } = require('../models/Detail');
 const { CartPage } = require('../models/Cart');

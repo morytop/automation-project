@@ -1,38 +1,37 @@
-const { BasePage } = require('../models/Base');
 const { faker } = require('@faker-js/faker');
 
-exports.LoginPage = class LoginPage extends BasePage {
+exports.LoginPage = class LoginPage {
     constructor(page) {
-        super(page);
-
-        this.loginEmail = '[data-qa="login-email"]';
-        this.loginPassword = '[data-qa="login-password"]';
-        this.loginBtn = '[data-qa="login-button"]';
-        this.signupName = '[data-qa="signup-name"]';
-        this.signupEmail = '[data-qa="signup-email"]';
-        this.signupBtn = '[data-qa="signup-button"]';    
+        this.page = page;
+        this.loginEmail = page.locator('[data-qa="login-email"]');
+        this.loginPassword = page.locator('[data-qa="login-password"]');
+        this.loginBtn = page.locator('[data-qa="login-button"]');
+        this.signupName = page.locator('[data-qa="signup-name"]');
+        this.signupEmail = page.locator('[data-qa="signup-email"]');
+        this.signupBtn = page.locator('[data-qa="signup-button"]');
+        this.menuLoginBtn = page.locator('i[class="fa fa-lock"]');    
     }
 
     async goTo() {
         await this.page.goto('/');
-        await this.page.click('i[class="fa fa-lock"]');
+        await this.menuLoginBtn.click();
     }
 
     async validLogin() {
-        await this.fill(this.loginEmail, process.env.USER_EMAIL);
-        await this.fill(this.loginPassword, process.env.USER_PASSWORD);
-        await this.click(this.loginBtn);
+        await this.loginEmail.fill(process.env.USER_EMAIL);
+        await this.loginPassword.fill(process.env.USER_PASSWORD);
+        await this.loginBtn.click();
     }
 
     async invalidLogin() {
-        await this.fill(this.loginEmail, faker.internet.email());
-        await this.fill(this.loginPassword, faker.internet.password());
-        await this.click(this.loginBtn);
+        await this.loginEmail.fill(faker.internet.email());
+        await this.loginPassword.fill(faker.internet.password());
+        await this.loginBtn.click();
     }
 
     async signupUser(name = faker.internet.userName(), email = faker.internet.email()) {
-        await this.fill(this.signupName, name);
-        await this.fill(this.signupEmail, email);
-        await this.click(this.signupBtn);
+        await this.signupName.fill(name);
+        await this.signupEmail.fill(email);
+        await this.signupBtn.click();
     }
 }    
