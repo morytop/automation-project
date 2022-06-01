@@ -1,24 +1,4 @@
 {
-  "Firefox e2e\\register.spec.js Register user: with existing email" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "4f821d421001b727",
-      "status" : "failed",
-      "statusDetails" : "expect(received).toBeVisible()\nCall log:\n  - expect.toBeVisible with timeout 5000ms\n  - waiting for selector \"//p[contains(text(),\"Email Address already exist!\")]\"\n",
-      "time" : {
-        "start" : 1653309629176,
-        "stop" : 1653309644120,
-        "duration" : 14944
-      }
-    } ]
-  },
   "Webkit e2e\\cart.spec.js Cart: remove product" : {
     "statistic" : {
       "failed" : 0,
@@ -29,92 +9,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c71344fbc5a1a2c9",
+      "uid" : "8f155743ae9b972c",
       "status" : "passed",
       "time" : {
-        "start" : 1653309667060,
-        "stop" : 1653309678864,
-        "duration" : 11804
-      }
-    } ]
-  },
-  "Chromium e2e\\homepage.spec.js Homepage: verify subscription" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1f7523c614b5fc0",
-      "status" : "failed",
-      "statusDetails" : "expect(received).toBeVisible()\nCall log:\n  - expect.toBeVisible with timeout 5000ms\n  - waiting for selector \"//*[contains(text(),\"You have been successfully subscribed!\")]\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n  -   selector resolved to <div class=\"alert-success alert\">You have been successfully subscribed!</div>\n  -   unexpected value \"false\"\n",
-      "time" : {
-        "start" : 1653309334439,
-        "stop" : 1653309344358,
-        "duration" : 9919
+        "start" : 1654088521249,
+        "stop" : 1654088528125,
+        "duration" : 6876
       }
     } ]
   },
   "Firefox e2e\\login.spec.js Login user: with correct credentials and logout" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "81b59a230bf65a50",
-      "status" : "failed",
-      "statusDetails" : "locator.fill: value: expected string, got undefined",
+      "uid" : "deffdc6e9b236b74",
+      "status" : "passed",
       "time" : {
-        "start" : 1653309538201,
-        "stop" : 1653309548572,
-        "duration" : 10371
-      }
-    } ]
-  },
-  "Webkit e2e\\login.spec.js Login user: with correct credentials and logout" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "591928117febb3a8",
-      "status" : "failed",
-      "statusDetails" : "locator.fill: value: expected string, got undefined",
-      "time" : {
-        "start" : 1653309724825,
-        "stop" : 1653309733390,
-        "duration" : 8565
-      }
-    } ]
-  },
-  "Chromium e2e\\login.spec.js Login user: with correct credentials and logout" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a80d36ebb0bbdbc3",
-      "status" : "failed",
-      "statusDetails" : "locator.fill: value: expected string, got undefined",
-      "time" : {
-        "start" : 1653309354245,
-        "stop" : 1653309361870,
-        "duration" : 7625
+        "start" : 1654088394743,
+        "stop" : 1654088403715,
+        "duration" : 8972
       }
     } ]
   },
@@ -128,16 +47,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3a2017a6ac2f106c",
+      "uid" : "b72714a656cf8e83",
       "status" : "passed",
       "time" : {
-        "start" : 1653309300664,
-        "stop" : 1653309309137,
-        "duration" : 8473
+        "start" : 1654088200856,
+        "stop" : 1654088207400,
+        "duration" : 6544
       }
     } ]
   },
-  "Chromium e2e\\cart.spec.js Cart: add to cart from recommended items" : {
+  "Webkit e2e\\login.spec.js Login user: with correct credentials and logout" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -147,16 +66,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5821e0ebec3d9e87",
+      "uid" : "f4d467be8d3c0c70",
       "status" : "passed",
       "time" : {
-        "start" : 1653309309138,
-        "stop" : 1653309320759,
-        "duration" : 11621
+        "start" : 1654088576082,
+        "stop" : 1654088583690,
+        "duration" : 7608
       }
     } ]
   },
-  "Chromium e2e\\contactUsForm.spec.js Contact us: send form with upoaded file" : {
+  "Webkit e2e\\products.spec.js Products: search product" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -166,12 +85,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f58d8d65a10cda83",
+      "uid" : "4f195e80a5f37f99",
       "status" : "passed",
       "time" : {
-        "start" : 1653309327290,
-        "stop" : 1653309334433,
-        "duration" : 7143
+        "start" : 1654088638346,
+        "stop" : 1654088645003,
+        "duration" : 6657
       }
     } ]
   },
@@ -185,50 +104,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ac3a51c9c1958f1a",
+      "uid" : "c8ea814900287808",
       "status" : "passed",
       "time" : {
-        "start" : 1653309470408,
-        "stop" : 1653309478754,
-        "duration" : 8346
-      }
-    } ]
-  },
-  "Chromium e2e\\products.spec.js Products: add review on product" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ce566250288608f1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309415804,
-        "stop" : 1653309425383,
-        "duration" : 9579
-      }
-    } ]
-  },
-  "Chromium e2e\\cart.spec.js Cart: verify product quantity" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "bffe737542b4a8ae",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309291550,
-        "stop" : 1653309300661,
-        "duration" : 9111
+        "start" : 1654088342185,
+        "stop" : 1654088348420,
+        "duration" : 6235
       }
     } ]
   },
@@ -242,31 +123,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4d8771a8528115f6",
+      "uid" : "7d73512ff3158c01",
       "status" : "passed",
       "time" : {
-        "start" : 1653309512109,
-        "stop" : 1653309520756,
-        "duration" : 8647
-      }
-    } ]
-  },
-  "Webkit e2e\\cart.spec.js Cart: verify product quantity" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c73afa9062f09723",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309657991,
-        "stop" : 1653309667059,
-        "duration" : 9068
+        "start" : 1654088373919,
+        "stop" : 1654088379278,
+        "duration" : 5359
       }
     } ]
   },
@@ -280,12 +142,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4b4dbfde617b0c97",
+      "uid" : "cf723e23be1da734",
       "status" : "passed",
       "time" : {
-        "start" : 1653309505676,
-        "stop" : 1653309512102,
-        "duration" : 6426
+        "start" : 1654088369260,
+        "stop" : 1654088373914,
+        "duration" : 4654
       }
     } ]
   },
@@ -299,35 +161,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "77e45c917e7da202",
+      "uid" : "ff5a2d4d6c47f694",
       "status" : "passed",
       "time" : {
-        "start" : 1653309714805,
-        "stop" : 1653309724818,
-        "duration" : 10013
+        "start" : 1654088564548,
+        "stop" : 1654088571943,
+        "duration" : 7395
       }
     } ]
   },
-  "Chromium e2e\\cart.spec.js Cart: add random item to cart and verify if is not empty" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a120b55b036b2eb4",
-      "status" : "skipped",
-      "time" : {
-        "start" : 1653310244842,
-        "stop" : 1653310244855,
-        "duration" : 13
-      }
-    } ]
-  },
-  "Firefox e2e\\products.spec.js Products: search jeans" : {
+  "Chromium e2e\\products.spec.js Products: search product" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -337,88 +180,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "85c10f4065389c29",
+      "uid" : "8e243a3fc2fa3cd6",
       "status" : "passed",
       "time" : {
-        "start" : 1653309575301,
-        "stop" : 1653309585877,
-        "duration" : 10576
-      }
-    } ]
-  },
-  "Firefox e2e\\cart.spec.js Cart: remove product" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "d749b64d372a8691",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309478755,
-        "stop" : 1653309491775,
-        "duration" : 13020
-      }
-    } ]
-  },
-  "Firefox e2e\\cart.spec.js Cart: add to cart from recommended items" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "755dcc5145d35ad0",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309491776,
-        "stop" : 1653309505670,
-        "duration" : 13894
-      }
-    } ]
-  },
-  "Webkit e2e\\homepage.spec.js Homepage: verify subscription" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "7a5acbfb2b295673",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309709001,
-        "stop" : 1653309714803,
-        "duration" : 5802
-      }
-    } ]
-  },
-  "Webkit e2e\\products.spec.js Products: view & cart brand products" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "bd100cb10d946564",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309774822,
-        "stop" : 1653309785527,
-        "duration" : 10705
+        "start" : 1654088292305,
+        "stop" : 1654088297884,
+        "duration" : 5579
       }
     } ]
   },
@@ -432,12 +199,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "add1a636f02957",
+      "uid" : "4d8bddb8480a8fe1",
       "status" : "passed",
       "time" : {
-        "start" : 1653309520765,
-        "stop" : 1653309526896,
-        "duration" : 6131
+        "start" : 1654088379288,
+        "stop" : 1654088383838,
+        "duration" : 4550
+      }
+    } ]
+  },
+  "Chromium e2e\\register.spec.js Register user: with existing email" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1b40cad396c16b74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088324480,
+        "stop" : 1654088329769,
+        "duration" : 5289
       }
     } ]
   },
@@ -451,128 +237,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c9543adc30e80eeb",
+      "uid" : "40ed5c92bbd73c61",
       "status" : "passed",
       "time" : {
-        "start" : 1653309691434,
-        "stop" : 1653309697262,
-        "duration" : 5828
-      }
-    } ]
-  },
-  "Chromium e2e\\register.spec.js Register user: with existing email" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "62e7f23ee3eabeb2",
-      "status" : "failed",
-      "statusDetails" : "expect(received).toBeVisible()\nCall log:\n  - expect.toBeVisible with timeout 5000ms\n  - waiting for selector \"//p[contains(text(),\"Email Address already exist!\")]\"\n",
-      "time" : {
-        "start" : 1653309445394,
-        "stop" : 1653309457196,
-        "duration" : 11802
-      }
-    } ]
-  },
-  "Webkit e2e\\register.spec.js Register user: with existing email" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "9e6ea3daab6853b3",
-      "status" : "failed",
-      "statusDetails" : "expect(received).toBeVisible()\nCall log:\n  - expect.toBeVisible with timeout 5000ms\n  - waiting for selector \"//p[contains(text(),\"Email Address already exist!\")]\"\n",
-      "time" : {
-        "start" : 1653309801036,
-        "stop" : 1653309813296,
-        "duration" : 12260
-      }
-    } ]
-  },
-  "Chromium e2e\\checkTestCasePage.spec.js Test Cases Verify Test Cases Page" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c257350de5c7311f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309320765,
-        "stop" : 1653309327286,
-        "duration" : 6521
-      }
-    } ]
-  },
-  "Firefox e2e\\products.spec.js Products: add review on product" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "faa4706771e60294",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309585878,
-        "stop" : 1653309597602,
-        "duration" : 11724
-      }
-    } ]
-  },
-  "Firefox e2e\\login.spec.js Login user: with incorrect credentials" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "3f588a403c7aadbb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309550588,
-        "stop" : 1653309563757,
-        "duration" : 13169
-      }
-    } ]
-  },
-  "Chromium e2e\\register.spec.js Register user: with valid data" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "4250b992f688a1da",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309434593,
-        "stop" : 1653309445393,
-        "duration" : 10800
+        "start" : 1654088544275,
+        "stop" : 1654088549514,
+        "duration" : 5239
       }
     } ]
   },
@@ -586,16 +256,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6425c2a3ca93d4a1",
+      "uid" : "15509aa995c16c0d",
       "status" : "passed",
       "time" : {
-        "start" : 1653309363988,
-        "stop" : 1653309373588,
-        "duration" : 9600
+        "start" : 1654088251440,
+        "stop" : 1654088256051,
+        "duration" : 4611
       }
     } ]
   },
-  "Firefox e2e\\register.spec.js Register user: with valid data" : {
+  "Firefox e2e\\placeOrder.spec.js Checkout & Payment: place order: login before checkout and download invoice" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -605,107 +275,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "54412a63986d792a",
+      "uid" : "84ea1bdafc7321dc",
       "status" : "passed",
       "time" : {
-        "start" : 1653309611462,
-        "stop" : 1653309629175,
-        "duration" : 17713
-      }
-    } ]
-  },
-  "Chromium e2e\\homepage.spec.js Homepage: view category products" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "70d566df610d5bea",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309346422,
-        "stop" : 1653309354242,
-        "duration" : 7820
-      }
-    } ]
-  },
-  "Webkit e2e\\login.spec.js Login user: with incorrect credentials" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "dc4854e705cae5cc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309735417,
-        "stop" : 1653309745103,
-        "duration" : 9686
-      }
-    } ]
-  },
-  "Firefox e2e\\homepage.spec.js Homepage: view category products" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "9aca123afdf1901d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309526897,
-        "stop" : 1653309538193,
-        "duration" : 11296
-      }
-    } ]
-  },
-  "Firefox e2e\\products.spec.js Products: verify all products and detail page" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "19ff3e8a0aecdb1f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309563769,
-        "stop" : 1653309575299,
-        "duration" : 11530
-      }
-    } ]
-  },
-  "Firefox e2e\\products.spec.js Products: view & cart brand products" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "baafd108205a1595",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309597603,
-        "stop" : 1653309611452,
-        "duration" : 13849
+        "start" : 1654088429672,
+        "stop" : 1654088445057,
+        "duration" : 15385
       }
     } ]
   },
@@ -719,12 +294,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "855dcffd896389b7",
+      "uid" : "c9005870e049bdc1",
       "status" : "passed",
       "time" : {
-        "start" : 1653309697272,
-        "stop" : 1653309708995,
-        "duration" : 11723
+        "start" : 1654088549518,
+        "stop" : 1654088559699,
+        "duration" : 10181
+      }
+    } ]
+  },
+  "Firefox e2e\\homepage.spec.js Homepage: verify scroll up using arrow" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9c18118cbbced3db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088390348,
+        "stop" : 1654088394737,
+        "duration" : 4389
       }
     } ]
   },
@@ -738,50 +332,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eaccbd5b890a901f",
+      "uid" : "ddccf6177674b424",
       "status" : "passed",
       "time" : {
-        "start" : 1653309678865,
-        "stop" : 1653309691428,
-        "duration" : 12563
-      }
-    } ]
-  },
-  "Firefox e2e\\cart.spec.js Cart: add random item to cart and verify if is not empty" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "908da06fa5821d03",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309459206,
-        "stop" : 1653309470405,
-        "duration" : 11199
-      }
-    } ]
-  },
-  "Webkit e2e\\register.spec.js Register user: with valid data" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "371523ec3d361683",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309785534,
-        "stop" : 1653309801035,
-        "duration" : 15501
+        "start" : 1654088528126,
+        "stop" : 1654088533690,
+        "duration" : 5564
       }
     } ]
   },
@@ -795,7 +351,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b10ce6a322b7cc5d",
+      "uid" : "8c3a157ebe792ea3",
       "status" : "passed",
       "time" : {
         "start" : 1653309754723,
@@ -814,50 +370,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cc622bfce1a454f5",
+      "uid" : "c16daaf1bd966285",
       "status" : "passed",
       "time" : {
-        "start" : 1653309763396,
-        "stop" : 1653309774820,
-        "duration" : 11424
-      }
-    } ]
-  },
-  "Webkit e2e\\cart.spec.js Cart: add random item to cart and verify if is not empty" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ab2962d781aac69d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309646146,
-        "stop" : 1653309657990,
-        "duration" : 11844
-      }
-    } ]
-  },
-  "Chromium e2e\\products.spec.js Products: view & cart brand products" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ce55d5ce834269c0",
-      "status" : "passed",
-      "time" : {
-        "start" : 1653309425385,
-        "stop" : 1653309434581,
-        "duration" : 9196
+        "start" : 1654088645004,
+        "stop" : 1654088653315,
+        "duration" : 8311
       }
     } ]
   },
@@ -871,12 +389,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "59e86b47b6b589c9",
+      "uid" : "1be438064817dde2",
       "status" : "passed",
       "time" : {
-        "start" : 1653309745116,
-        "stop" : 1653309754721,
-        "duration" : 9605
+        "start" : 1654088629790,
+        "stop" : 1654088638345,
+        "duration" : 8555
       }
     } ]
   },
@@ -890,12 +408,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "16fe7ba7a4ede573",
+      "uid" : "95c4548ff15e71d",
       "status" : "passed",
       "time" : {
-        "start" : 1653309373596,
-        "stop" : 1653309382165,
-        "duration" : 8569
+        "start" : 1654088285447,
+        "stop" : 1654088292304,
+        "duration" : 6857
       }
     } ]
   },
@@ -909,13 +427,773 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d20535f682770018",
+      "uid" : "8859102019b285ab",
       "status" : "broken",
       "statusDetails" : "Timeout of 30000ms exceeded in beforeEach hook.",
       "time" : {
         "start" : 1653309382167,
         "stop" : 1653309413796,
         "duration" : 31629
+      }
+    } ]
+  },
+  "Firefox e2e\\register.spec.js Register user: with existing email" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ca534ae7ceb73dfc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088494249,
+        "stop" : 1654088500726,
+        "duration" : 6477
+      }
+    } ]
+  },
+  "Chromium e2e\\homepage.spec.js Homepage: verify subscription" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f13e03dce1d2a69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088231756,
+        "stop" : 1654088234719,
+        "duration" : 2963
+      }
+    } ]
+  },
+  "Webkit e2e\\placeOrder.spec.js Checkout & Payment: place order: register while checkout" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9c40b95cfe12215e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088589465,
+        "stop" : 1654088612984,
+        "duration" : 23519
+      }
+    } ]
+  },
+  "Chromium e2e\\login.spec.js Login user: with correct credentials and logout" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dcea9e7a372cd5e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088243992,
+        "stop" : 1654088251439,
+        "duration" : 7447
+      }
+    } ]
+  },
+  "Chromium e2e\\cart.spec.js Cart: add to cart from recommended items" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e89e4c348eb8caa9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088207401,
+        "stop" : 1654088212774,
+        "duration" : 5373
+      }
+    } ]
+  },
+  "Chromium e2e\\homepage.spec.js Homepage: verify scroll up using arrow" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f4959edd58c52e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088240224,
+        "stop" : 1654088243988,
+        "duration" : 3764
+      }
+    } ]
+  },
+  "Chromium e2e\\contactUsForm.spec.js Contact us: send form with upoaded file" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "881431245d576a00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088226488,
+        "stop" : 1654088231749,
+        "duration" : 5261
+      }
+    } ]
+  },
+  "Firefox e2e\\checkout.spec.js Checkout & Payment: verify address details in checkout page" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "46584affc1a3922a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088359851,
+        "stop" : 1654088369253,
+        "duration" : 9402
+      }
+    } ]
+  },
+  "Chromium e2e\\products.spec.js Products: add review on product" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c3d8ac0c589aa227",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088297885,
+        "stop" : 1654088305685,
+        "duration" : 7800
+      }
+    } ]
+  },
+  "Chromium e2e\\placeOrder.spec.js Checkout & Payment: place order: login before checkout and download invoice" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d566b9209a9db4b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088272689,
+        "stop" : 1654088285440,
+        "duration" : 12751
+      }
+    } ]
+  },
+  "Chromium e2e\\cart.spec.js Cart: verify product quantity" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d818a7120b725ebe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088194390,
+        "stop" : 1654088200855,
+        "duration" : 6465
+      }
+    } ]
+  },
+  "Webkit e2e\\cart.spec.js Cart: verify product quantity" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f116d2da6fd2175",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088514577,
+        "stop" : 1654088521248,
+        "duration" : 6671
+      }
+    } ]
+  },
+  "Chromium e2e\\cart.spec.js Cart: add random item to cart and verify if is not empty" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2b8684bb968380dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088185217,
+        "stop" : 1654088194388,
+        "duration" : 9171
+      }
+    } ]
+  },
+  "Firefox e2e\\products.spec.js Products: search jeans" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ef573f7aad553540",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653309575301,
+        "stop" : 1653309585877,
+        "duration" : 10576
+      }
+    } ]
+  },
+  "Firefox e2e\\cart.spec.js Cart: remove product" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a6861f5b022df244",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088348421,
+        "stop" : 1654088354478,
+        "duration" : 6057
+      }
+    } ]
+  },
+  "Firefox e2e\\cart.spec.js Cart: add to cart from recommended items" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "742ae820adb10276",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088354479,
+        "stop" : 1654088359844,
+        "duration" : 5365
+      }
+    } ]
+  },
+  "Webkit e2e\\homepage.spec.js Homepage: verify subscription" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d71c82bfa7551233",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088559705,
+        "stop" : 1654088564547,
+        "duration" : 4842
+      }
+    } ]
+  },
+  "Webkit e2e\\products.spec.js Products: view & cart brand products" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0e05ac0bdc3d8fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088653316,
+        "stop" : 1654088661748,
+        "duration" : 8432
+      }
+    } ]
+  },
+  "Chromium e2e\\checkout.spec.js Checkout & Payment: verify address details in checkout page" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f6ea195167ac2f0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088212782,
+        "stop" : 1654088221923,
+        "duration" : 9141
+      }
+    } ]
+  },
+  "Webkit e2e\\register.spec.js Register user: with existing email" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7ae4365bba8cbe3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088675158,
+        "stop" : 1654088681331,
+        "duration" : 6173
+      }
+    } ]
+  },
+  "Firefox e2e\\products.spec.js Products: add review on product" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b16294147de78c1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088461376,
+        "stop" : 1654088470634,
+        "duration" : 9258
+      }
+    } ]
+  },
+  "Chromium e2e\\checkTestCasePage.spec.js Test Cases Verify Test Cases Page" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a7eb5b30c93dde2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088221928,
+        "stop" : 1654088226480,
+        "duration" : 4552
+      }
+    } ]
+  },
+  "Firefox e2e\\login.spec.js Login user: with incorrect credentials" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7ecfb07d4b11771d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088403716,
+        "stop" : 1654088409738,
+        "duration" : 6022
+      }
+    } ]
+  },
+  "Chromium e2e\\register.spec.js Register user: with valid data" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4b709eeee59f6c4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088314597,
+        "stop" : 1654088324479,
+        "duration" : 9882
+      }
+    } ]
+  },
+  "Webkit e2e\\placeOrder.spec.js Checkout & Payment: place order: login before checkout and download invoice" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98f1d2a4ee68f122",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088612986,
+        "stop" : 1654088629782,
+        "duration" : 16796
+      }
+    } ]
+  },
+  "Firefox e2e\\register.spec.js Register user: with valid data" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f4984a1d851211e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088479849,
+        "stop" : 1654088494247,
+        "duration" : 14398
+      }
+    } ]
+  },
+  "Chromium e2e\\homepage.spec.js Homepage: view category products" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ef3e64bde03d51e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088234721,
+        "stop" : 1654088240222,
+        "duration" : 5501
+      }
+    } ]
+  },
+  "Webkit e2e\\login.spec.js Login user: with incorrect credentials" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f5676b1e5755ad8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088583692,
+        "stop" : 1654088589458,
+        "duration" : 5766
+      }
+    } ]
+  },
+  "Firefox e2e\\placeOrder.spec.js Checkout & Payment: place order: register while checkout" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9f4a5336fc36b6e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088409749,
+        "stop" : 1654088429671,
+        "duration" : 19922
+      }
+    } ]
+  },
+  "Firefox e2e\\homepage.spec.js Homepage: view category products" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "63686b9e0328b910",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088383839,
+        "stop" : 1654088390347,
+        "duration" : 6508
+      }
+    } ]
+  },
+  "Firefox e2e\\products.spec.js Products: verify all products and detail page" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f06f020ee26dd5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088445068,
+        "stop" : 1654088454108,
+        "duration" : 9040
+      }
+    } ]
+  },
+  "Firefox e2e\\products.spec.js Products: view & cart brand products" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5fcee5cbc92a226d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088470635,
+        "stop" : 1654088479840,
+        "duration" : 9205
+      }
+    } ]
+  },
+  "Firefox e2e\\products.spec.js Products: search product" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eea1a94d473b8f92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088454109,
+        "stop" : 1654088461375,
+        "duration" : 7266
+      }
+    } ]
+  },
+  "Firefox e2e\\cart.spec.js Cart: add random item to cart and verify if is not empty" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c489433d3b79c38f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088332171,
+        "stop" : 1654088342184,
+        "duration" : 10013
+      }
+    } ]
+  },
+  "Webkit e2e\\register.spec.js Register user: with valid data" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c12147fddc09a69b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088661756,
+        "stop" : 1654088675157,
+        "duration" : 13401
+      }
+    } ]
+  },
+  "Webkit e2e\\cart.spec.js Cart: add random item to cart and verify if is not empty" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "14d1b796ad524bbb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088503793,
+        "stop" : 1654088514576,
+        "duration" : 10783
+      }
+    } ]
+  },
+  "Chromium e2e\\placeOrder.spec.js Checkout & Payment: place order: register while checkout" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8d79c442da6289d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088256060,
+        "stop" : 1654088272688,
+        "duration" : 16628
+      }
+    } ]
+  },
+  "Chromium e2e\\products.spec.js Products: view & cart brand products" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7b600ff6b1ef6b05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088305686,
+        "stop" : 1654088314590,
+        "duration" : 8904
+      }
+    } ]
+  },
+  "Webkit e2e\\checkout.spec.js Checkout & Payment: verify address details in checkout page" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5037943fbb54407d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088533698,
+        "stop" : 1654088544268,
+        "duration" : 10570
+      }
+    } ]
+  },
+  "Webkit e2e\\homepage.spec.js Homepage: verify scroll up using arrow" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a7d92926f38a92e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654088571944,
+        "stop" : 1654088576075,
+        "duration" : 4131
       }
     } ]
   }

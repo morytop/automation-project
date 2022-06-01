@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "tests": "env-cmd -f dev.env npx playwright test e2e/",
-    "tests:allure": "env-cmd -f dev.env npx playwright test e2e/ --project=chromium --reporter=line,allure-playwright",
+    "tests:allure": "env-cmd -f dev.env npx playwright test e2e/ --reporter=line,allure-playwright",
     "tests:debug": "env-cmd -f dev.env npx playwright test e2e/ --debug --project=chromium",
     "tests:ch": "env-cmd -f dev.env npx playwright test e2e/  --project=chromium",
     "tests:ff": "env-cmd -f dev.env  npx playwright test e2e/  --project=firefox",
     "tests:wk": "env-cmd -f dev.env  npx playwright test e2e/  --project=webkit",
-    "generate:report": "npx allure generate ./allure-results --clean"
+    "allure:generate": "npx allure generate ./allure-results --clean",
+    "allure:open": "npx allure open ./allure-report"
   },
   "keywords": [
     "playwright",
