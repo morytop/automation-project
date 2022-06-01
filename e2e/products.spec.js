@@ -9,7 +9,7 @@ test.describe('Products:', () => {
     test.beforeEach(async ({ page }) => {
         const productsPage = new ProductsPage(page);
         productsPage.goToProducts();
-        await page.waitForNavigation('/products');
+        await page.waitForURL('/products');
     })
     
     test('verify all products and detail page', async ({ page }) => {

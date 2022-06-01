@@ -1,5 +1,4 @@
 const { test, expect } = require('@playwright/test');
-const { BasePage } = require('../models/Base');
 const { HomePage } = require('../models/Homepage');
 
 test.describe('Test Cases', () => {
