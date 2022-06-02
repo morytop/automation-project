@@ -11,28 +11,23 @@ test.describe('Login user:', () => {
     })
 
     test('with correct credentials and logout', async ({page}) => {
-        await page.click('i[class="fa fa-lock"]');
+        await page.click('.fa.fa-lock');
         await expect(page.locator('.login-form')).toBeVisible();
-		await expect(page.locator('//*[contains(text(),"Login to your account")]')).toBeVisible();
-
+		await expect(page.locator('.login-form >> h2:has-text("Login to your account")')).toBeVisible();
         const loginPage = new LoginPage(page);
         await loginPage.validLogin();
-
         await page.waitForResponse(response => response.status() === 200);
-        expect(page.locator('a >> i[class="fa fa-user"]')).toBeVisible();
-
+        expect(page.locator('a >> .fa.fa-user')).toBeVisible();
         await page.click('li >> a[href="/logout"]');
         await expect(page).toHaveURL('/login');
     })
 
     test('with incorrect credentials', async ({ page }) => {
-        await page.click('i[class="fa fa-lock"]');
+        await page.click('.fa.fa-lock');
         await expect(page.locator('.login-form')).toBeVisible();
-		await expect(page.locator('//*[contains(text(),"Login to your account")]')).toBeVisible();
-
+		await expect(page.locator('.login-form >> h2:has-text("Login to your account")')).toBeVisible();
         const loginPage = new LoginPage(page);
         await loginPage.invalidLogin();
-
-        await expect(page.locator('//*[contains(text(),"Your email or password is incorrect!")]'),).toBeVisible();
+        await expect(page.locator('form[action="/login"] >> p'),).toBeVisible();
     })
 })
