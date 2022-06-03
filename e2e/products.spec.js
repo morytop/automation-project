@@ -50,7 +50,7 @@ test.describe('Products:', () => {
         await page.waitForSelector('.features_items');
         await page.locator('.fa.fa-plus-square').first().click();
         await detailPage.addReview();
-        await expect(page.locator('//*[contains(text(),"Thank you for your review.")]')).toBeVisible();
+        await expect(page.locator('.alert-success.alert >> span')).toBeVisible();
     })
 
     test('view & cart brand products', async ({page}) => {
