@@ -6,7 +6,7 @@ const { CartPage } = require('../models/Cart');
 const { CheckoutPage } = require('../models/Checkout');
 const { PaymentPage } = require('../models/Payment');
 
-test.describe('Checkout & Payment:', () => {
+test.describe('Payment:', () => {
     test.beforeEach(async ({page}) => {
         const homepage = new HomePage(page);
         await homepage.visit();
