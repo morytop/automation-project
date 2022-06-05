@@ -1,8 +1,9 @@
 const { faker } = require('@faker-js/faker');
+const { BasePage } = require('./Base');
 
-exports.SignupPage = class SignupPage {
+exports.SignupPage = class SignupPage extends BasePage {
     constructor(page) {
-        this.page = page;
+        super(page);
         this.radioBtn = page.locator('#id_gender1');
         this.name = page.locator('[data-qa="name"]');
         this.email = page.locator('[data-qa="email"]');
@@ -23,9 +24,14 @@ exports.SignupPage = class SignupPage {
         this.zipcode = page.locator('[data-qa="zipcode"]');
         this.mobileNumber = page.locator('[data-qa="mobile_number"]');
         this.createBtn = page.locator('[data-qa="create-account"]');
+        this.accountCreatedInfo = page.locator('[data-qa="account-created"]');
+        this.continueBtn = page.locator('[data-qa="continue-button"]');
+        this.signupForm = page.locator('.signup-form');
+        this.sigupHeaderText = page.locator('.signup-form >> h2');
+        this.errorEmailExist = page.locator('form[action="/signup"] >> p');
     }
 
-    async signupForm() {
+    async createAccount() {
         await this.radioBtn.click();
         await this.password.fill(faker.internet.password());
         await this.selectDay.selectOption('2');

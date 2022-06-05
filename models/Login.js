@@ -1,20 +1,25 @@
 const { faker } = require('@faker-js/faker');
+const { BasePage } = require('./Base');
 
-exports.LoginPage = class LoginPage {
+exports.LoginPage = class LoginPage extends BasePage{
     constructor(page) {
-        this.page = page;
+        super(page);
         this.loginEmail = page.locator('[data-qa="login-email"]');
         this.loginPassword = page.locator('[data-qa="login-password"]');
         this.loginBtn = page.locator('[data-qa="login-button"]');
         this.signupName = page.locator('[data-qa="signup-name"]');
         this.signupEmail = page.locator('[data-qa="signup-email"]');
         this.signupBtn = page.locator('[data-qa="signup-button"]');
-        this.menuLoginBtn = page.locator('i[class="fa fa-lock"]');    
+        this.loginForm = page.locator('.login-form');
+        this.loginHeaderText = page.locator('.login-form >> h2');
+        this.loggedAs = page.locator('a >> .fa.fa-user');
+        this.logoutBtn = page.locator('li >> a[href="/logout"]');
+        this.error = page.locator('form[action="/login"] >> p');    
     }
 
     async goTo() {
         await this.page.goto('/');
-        await this.menuLoginBtn.click();
+        await this.signupLoginBtn.click();
     }
 
     async validLogin() {

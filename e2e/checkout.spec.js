@@ -4,19 +4,17 @@ const { CartPage } = require('../models/Cart');
 
 test.describe('Checkout:', () => {
     test('verify address details in checkout page', async ({page}) => {
-        const loginPage = new LoginPage(page);
-        await loginPage.goTo();
-        await loginPage.validLogin();
-        const cartPage = new CartPage(page);
-        await cartPage.addRandomItem();
-        await cartPage.open();
+        const login = new LoginPage(page);
+        await login.goTo();
+        await login.validLogin();
+        const cart = new CartPage(page);
+        await cart.addRandomItem();
+        await cart.open();
         await expect(page).toHaveURL('/view_cart');
-        await cartPage.proceedToCheckout();
+        await cart.proceedToCheckout();
         await expect(page).toHaveURL('/checkout');
-        const deliveryAdress = page.locator('#address_delivery');
-        const billingAdress = page.locator('#address_invoice');
-        await expect(deliveryAdress).toBeVisible();
-        await expect(billingAdress).toBeVisible();
-        await expect(page.locator('.address_firstname.address_lastname >> nth=0')).toHaveText('Mr. tester ipsum');
+        await expect(cart.deliveryAddress).toBeVisible();
+        await expect(cart.billingAddress).toBeVisible();
+        await expect(cart.addressDetails).toHaveText('Mr. tester ipsum');
     });
 })

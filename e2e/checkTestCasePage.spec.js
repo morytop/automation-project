@@ -3,9 +3,9 @@ const { HomePage } = require('../models/Homepage');
 
 test.describe('Test Cases', () => {
     test('Verify Test Cases Page', async ({ page }) => {
-        const homePage = new HomePage(page);
-        await homePage.visit();
-        await page.click('li >> a[href="/test_cases"]');
+        const homepage = new HomePage(page);
+        await homepage.visit();
+        await homepage.testCasesBtn.click();
         await expect(page).toHaveURL('/test_cases');
     })
 })

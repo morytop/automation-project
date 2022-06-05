@@ -5,29 +5,28 @@ test.describe('Homepage:', () => {
     test.beforeEach(async ({page}) => {
         const homepage = new HomePage(page);
         await homepage.visit();
-        await expect(page.locator('#slider-carousel')).toBeVisible();
+        await expect(homepage.slider).toBeVisible();
     })
 
     test('verify subscription', async ({ page }) => {
         const homepage = new HomePage(page);
-        await expect(page.locator('.single-widget >> h2')).toHaveText('Subscription');
+        await expect(homepage.subscriptionTitle).toHaveText('Subscription');
         await homepage.subscribe();
-        await expect(page.locator('.alert-success.alert')).toBeVisible();
+        await expect(homepage.successSubcribeAlert).toBeVisible();
     })
 
     test('view category products', async ({ page }) => {
         const homepage = new HomePage(page);
-        await expect(page.locator('.left-sidebar')).toBeVisible();
+        await expect(homepage.leftSidebar).toBeVisible();
         await homepage.viewWomenCategory();
-        await expect(page.locator('.title.text-center')).toContainText('Women - Dress Products');
+        await expect(homepage.itemsTiltle).toContainText('Women - Dress Products');
         await homepage.viewMenCategory();
-        await expect(page.locator('.title.text-center')).toContainText('Men - Tshirts Products');
+        await expect(homepage.itemsTiltle).toContainText('Men - Tshirts Products');
     })
 
     test('verify scroll up using arrow', async ({page}) => {
-        await expect(page.locator('.single-widget >> h2')).toHaveText('Subscription');
-        const unvisibleButton = await page.$('#scrollUp'); 
-        unvisibleButton.evaluate((node) => {node.click()})
-        await expect(page.locator('img[alt="Website for automation practice"]')).toBeVisible();
+        const homepage = new HomePage(page);
+        await homepage.clickUnvisibleScroll();
+        await expect(homepage.slider).toBeVisible();
     })
 })

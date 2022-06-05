@@ -1,8 +1,9 @@
 const { faker } = require('@faker-js/faker');
+const { BasePage } = require('./Base');
 
-exports.CheckoutPage = class CheckoutPage {
+exports.CheckoutPage = class CheckoutPage extends BasePage {
     constructor(page) {
-        this.page = page;
+        super(page);
         this.form = page.locator('textarea[class="form-control"]');
         this.orderBtn = page.locator('a[class="btn btn-default check_out"]');
     }

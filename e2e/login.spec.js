@@ -5,29 +5,27 @@ const { LoginPage } = require('../models/Login');
 
 test.describe('Login user:', () => {
     test.beforeEach(async ({ page }) => {
-        const homePage = new HomePage(page);
-        await homePage.visit();
-        await expect(page.locator('#slider-carousel')).toBeVisible();
+        const homepage = new HomePage(page);
+        await homepage.visit();
+        await expect(homepage.slider).toBeVisible();
     })
 
     test('with correct credentials and logout', async ({page}) => {
-        await page.click('.fa.fa-lock');
-        await expect(page.locator('.login-form')).toBeVisible();
-		await expect(page.locator('.login-form >> h2:has-text("Login to your account")')).toBeVisible();
-        const loginPage = new LoginPage(page);
-        await loginPage.validLogin();
+        const login = new LoginPage(page);
+        await login.signupLoginBtn.click();
+        await expect(login.loginForm).toBeVisible();
+		await expect(login.loginHeaderText).toBeVisible();
+        await login.validLogin();
         await page.waitForResponse(response => response.status() === 200);
-        expect(page.locator('a >> .fa.fa-user')).toBeVisible();
-        await page.click('li >> a[href="/logout"]');
+        expect(login.loggedAs).toBeVisible();
+        await login.logoutBtn.click();
         await expect(page).toHaveURL('/login');
     })
 
     test('with incorrect credentials', async ({ page }) => {
-        await page.click('.fa.fa-lock');
-        await expect(page.locator('.login-form')).toBeVisible();
-		await expect(page.locator('.login-form >> h2:has-text("Login to your account")')).toBeVisible();
-        const loginPage = new LoginPage(page);
-        await loginPage.invalidLogin();
-        await expect(page.locator('form[action="/login"] >> p'),).toBeVisible();
+        const login = new LoginPage(page);
+        await login.signupLoginBtn.click();
+        await login.invalidLogin();
+        await expect(login.error).toBeVisible();
     })
 })

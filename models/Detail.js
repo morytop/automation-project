@@ -1,12 +1,14 @@
 const { faker } = require('@faker-js/faker');
+const { BasePage } = require('./Base');
 
-exports.DetailPage = class DetailPage {
+exports.DetailPage = class DetailPage extends BasePage {
     constructor(page) {
-        this.page = page;
+        super(page);
         this.nameReviewInput = page.locator('#name');
         this.emailReviewInput = page.locator('#email');
         this.textareaReview = page.locator('#review');
         this.reviewBtn = page.locator('#button-review');
+        this.successReviewMessage = page.locator('.alert-success.alert >> span')
     }
 
     async addReview() {
