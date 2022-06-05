@@ -14,10 +14,10 @@ test.describe('Login user:', () => {
         const login = new LoginPage(page);
         await login.signupLoginBtn.click();
         await expect(login.loginForm).toBeVisible();
-		await expect(login.loginHeaderText).toBeVisible();
+	await expect(login.loginHeaderText).toBeVisible();
         await login.validLogin();
         await page.waitForResponse(response => response.status() === 200);
-        expect(login.loggedAs).toBeVisible();
+        await expect(login.loggedAs).toBeVisible();
         await login.logoutBtn.click();
         await expect(page).toHaveURL('/login');
     })
