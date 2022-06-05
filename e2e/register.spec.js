@@ -15,7 +15,7 @@ test.describe('Register user:', () => {
         await login.signupLoginBtn.click();
         const signup = new SignupPage(page)
         await expect(signup.signupForm).toBeVisible();
-		await expect(signup.sigupHeaderText).toBeVisible();   
+	await expect(signup.sigupHeaderText).toBeVisible();   
         await login.signupUser();
         await expect(page).toHaveURL('/signup');
         await expect(login.loginForm).toBeVisible();
@@ -31,7 +31,7 @@ test.describe('Register user:', () => {
         const signup = new SignupPage(page);
         await login.signupLoginBtn.click();
         await expect(signup.signupForm).toBeVisible();
-		await expect(signup.sigupHeaderText).toBeVisible();
+	await expect(signup.sigupHeaderText).toBeVisible();
         await login.signupUser(this.name, process.env.USER_EMAIL);
         await expect(signup.errorEmailExist).toBeVisible();
     })
