@@ -20,9 +20,9 @@ test.describe('Cart:', () => {
     test('verify product quantity', async ({page}) => {
         const cart = new CartPage(page);
         await cart.viewProductBtn.first().click();
-		await expect(page).toHaveURL('/product_details/1');
-		await cart.quantityInput.fill('4');
-		await cart.detailAddToCartBtn.click();;
+	await expect(page).toHaveURL('/product_details/1');
+	await cart.quantityInput.fill('4');
+	await cart.detailAddToCartBtn.click();;
         await cart.viewCartBtn.click();
         await expect(page).toHaveURL('/view_cart');
         await expect(cart.cartQuantity).toHaveText('4');
